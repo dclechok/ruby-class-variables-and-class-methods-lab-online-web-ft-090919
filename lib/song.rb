@@ -29,13 +29,10 @@ class Song
   
   def self.genre_count()
     histogram = {}
-		count = 0
 		@@genres.each do |index|
 			if(histogram.has_key?(index)) 
-				#if key exists, add 1 to the count value
 				histogram[index] += 1
 			else
-				#create new key and value
 				histogram[index] = 1
 			end
 		end
@@ -44,13 +41,10 @@ class Song
   
 	def self.artist_count
 		artist_histogram = {}
-		count = 0
 		@@artists.each do |index|
 			if(artist_histogram.has_key?(index)) 
-				#if key exists, add 1 to the count value
 				artist_histogram[index] += 1
 			else
-				#create new key and value
 				artist_histogram[index] = 1
 			end
 		end
